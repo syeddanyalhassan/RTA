@@ -1,0 +1,21 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="MavenPackageUpdate" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="excludeList">
+        <list>
+          <option value="org.testng:testng" />
+          <option value="org.seleniumhq.selenium:selenium-java" />
+          <option value="org.apache.poi:poi-scratchpad" />
+          <option value="org.apache.poi:poi-ooxml-schemas" />
+          <option value="org.apache.poi:poi-ooxml" />
+          <option value="org.apache.poi:poi" />
+          <option value="org.apache.poi:ooxml-schemas" />
+          <option value="commons-io:commons-io" />
+          <option value="com.aventstack:extentreports" />
+          <option value="io.qameta.allure:allure-testng" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
