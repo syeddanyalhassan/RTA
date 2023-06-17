@@ -11,29 +11,33 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage extends BasePage
 {
-    @FindBy(id="pageTitle")
-    WebElement homePageHeader;
+   // @FindBy(id="pageTitle")
+   // WebElement homePageHeader;
 
-    @FindBy(xpath="//div[@class=\"login-n-register\"]/a/span[text()=\"Login\"]")
+    @FindBy(xpath="//ul/li/a[@href=\"/wps/portal/rta/ae/driver-and-carowner\"]")
     WebElement secondSection;
+    @FindBy(id="pageTitle")
+    WebElement homePage;
+
 
     public HomePage(WebDriver driver)
     {
         this.driver=driver;
         PageFactory.initElements(driver,this);
     }
+    public void secondSectionClick()  {
+        WebDriverWait wait=new WebDriverWait(driver,20);
+        wait.until(ExpectedConditions.elementToBeClickable(secondSection)).click();
+    }
+
     public String getHomePageTitle()
     {
-        WebDriverWait wait=new WebDriverWait(driver,20);
+       WebDriverWait wait=new WebDriverWait(driver,20);
         wait.until(ExpectedConditions.titleContains(Constants.HOME_PAGE_TITLE));
         return driver.getTitle();
     }
-    public void secondSectionClick()  {
-        WebDriverWait wait=new WebDriverWait(driver,20);
-        wait.until(ExpectedConditions.elementToBeClickable(homePageHeader)).click();
-    }
-
-    /*public boolean verifyHomePageHeader()
+/*
+    public boolean verifyHomePageHeader()
     {
         WebDriverWait wait=new WebDriverWait(driver,20);
         wait.until(ExpectedConditions.visibilityOf(homePageHeader));

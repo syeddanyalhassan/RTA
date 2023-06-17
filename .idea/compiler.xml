@@ -9,10 +9,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="JanPOMSeries" />
+        <module name="DanyalSeries" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="JanPOMSeries" target="1.8" />
       <module name="rta" target="1.8" />
     </bytecodeTargetLevel>
   </component>
