@@ -28,8 +28,9 @@ public class HomePage extends BasePage
         wait.until(ExpectedConditions.titleContains(Constants.HOME_PAGE_TITLE));
         return driver.getTitle();
     }
-    public void secondSectionClick() throws InterruptedException {
-        Thread.sleep(6000);
+    public void secondSectionClick()  {
+        WebDriverWait wait=new WebDriverWait(driver,20);
+        wait.until(ExpectedConditions.visibilityOf(secondSection));
         secondSection.click();
     }
 
