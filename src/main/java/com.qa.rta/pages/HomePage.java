@@ -29,8 +29,8 @@ public class HomePage extends BasePage
         return driver.getTitle();
     }
     public void secondSectionClick()  {
-         
-        secondSection.click();
+        WebDriverWait wait=new WebDriverWait(driver,20);
+        wait.until(ExpectedConditions.elementToBeClickable(homePageHeader)).click();
     }
 
     /*public boolean verifyHomePageHeader()
