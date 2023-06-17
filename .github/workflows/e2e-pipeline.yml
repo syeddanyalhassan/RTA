@@ -1,21 +1,21 @@
-name: e2e pipeline
-run-name: Build, Deploy, Test - from user @${{ github.actor }}
+name: e2e-pipeline
+run-name: Build, Deploy,Test from @${{github.actor}}
 
-on: 
+on:
   workflow_dispatch:
-
-jobs: 
-  build:  
+  
+jobs:
+  build:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Set up JDK 11
-        uses: actions/setup-java@v3
-        with:
-          java-version: '11'
-          distribution: 'temurin'
-          cache: maven
-
-      - name: Run Unit Tests
-        run: mvn clean install
+    - uses: actions/checkout@v3
+    
+    - name: Setup JDK 11
+      uses: actions/setup-java@v3
+      with:
+        java-version: 11
+        distribution: "temurin"
+        cache: maven
+        
+    - name: Run Java Test
+      run: mvn clean install
