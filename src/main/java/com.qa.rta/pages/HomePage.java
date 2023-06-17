@@ -14,7 +14,7 @@ public class HomePage extends BasePage
     @FindBy(id="pageTitle")
     WebElement homePageHeader;
 
-    @FindBy(xpath="//ul/li[2]/a")
+    @FindBy(xpath="//div[@class=\"login-n-register\"]/a/span[text()=\"Login\"]")
     WebElement secondSection;
 
     public HomePage(WebDriver driver)
