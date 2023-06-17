@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="RTA App Regression Test" duration-ms="16543" started-at="2023-06-16T19:07:12Z" finished-at="2023-06-16T19:07:29Z">
+  <suite name="RTA App Regression Test" duration-ms="14599" started-at="2023-06-17T13:21:23Z" finished-at="2023-06-17T13:21:38Z">
     <groups>
     </groups>
-    <test name="rta regression Test" duration-ms="16543" started-at="2023-06-16T19:07:12Z" finished-at="2023-06-16T19:07:29Z">
+    <test name="rta regression Test" duration-ms="14599" started-at="2023-06-17T13:21:23Z" finished-at="2023-06-17T13:21:38Z">
       <class name="com.qa.rta.tests.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.rta.tests.HomePageTest@46292372]" name="setUp" is-config="true" duration-ms="7336" started-at="2023-06-16T19:07:12Z" finished-at="2023-06-16T19:07:20Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.rta.tests.HomePageTest@5c371e13]" name="setUp" is-config="true" duration-ms="6800" started-at="2023-06-17T13:21:23Z" finished-at="2023-06-17T13:21:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:0, instance:com.qa.rta.tests.HomePageTest@46292372]" name="verifyHomePageTitleTest" duration-ms="154" started-at="2023-06-16T19:07:20Z" description="Navigation to website scenario" finished-at="2023-06-16T19:07:20Z">
+        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:0, instance:com.qa.rta.tests.HomePageTest@5c371e13]" name="verifyHomePageTitleTest" duration-ms="90" started-at="2023-06-17T13:21:30Z" description="Navigation to website scenario" finished-at="2023-06-17T13:21:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.rta.tests.HomePageTest@46292372]" name="tearDown" is-config="true" duration-ms="731" started-at="2023-06-16T19:07:20Z" finished-at="2023-06-16T19:07:21Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.rta.tests.HomePageTest@5c371e13]" name="tearDown" is-config="true" duration-ms="745" started-at="2023-06-17T13:21:30Z" finished-at="2023-06-17T13:21:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.rta.tests.HomePageTest@46292372]" name="setUp" is-config="true" duration-ms="5741" started-at="2023-06-16T19:07:21Z" finished-at="2023-06-16T19:07:27Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.rta.tests.HomePageTest@5c371e13]" name="setUp" is-config="true" duration-ms="4884" started-at="2023-06-17T13:21:31Z" finished-at="2023-06-17T13:21:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="clickSection()[pri:1, instance:com.qa.rta.tests.HomePageTest@46292372]" name="clickSection" duration-ms="1616" started-at="2023-06-16T19:07:27Z" description="Click on Sub menus" finished-at="2023-06-16T19:07:28Z">
+        <test-method status="PASS" signature="clickSection()[pri:1, instance:com.qa.rta.tests.HomePageTest@5c371e13]" name="clickSection" duration-ms="1189" started-at="2023-06-17T13:21:36Z" description="Click on Sub menus" finished-at="2023-06-17T13:21:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickSection -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.rta.tests.HomePageTest@46292372]" name="tearDown" is-config="true" duration-ms="663" started-at="2023-06-16T19:07:28Z" finished-at="2023-06-16T19:07:29Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.rta.tests.HomePageTest@5c371e13]" name="tearDown" is-config="true" duration-ms="674" started-at="2023-06-17T13:21:37Z" finished-at="2023-06-17T13:21:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
