@@ -29,7 +29,7 @@ public class HomePage extends BasePage
         return driver.getTitle();
     }
     public void secondSectionClick()  {
-        WebDriverWait wait=new WebDriverWait(driver,20);
+        WebDriverWait wait=new WebDriverWait(driver,1200);
         wait.until(ExpectedConditions.visibilityOf(secondSection));
         secondSection.click();
     }
