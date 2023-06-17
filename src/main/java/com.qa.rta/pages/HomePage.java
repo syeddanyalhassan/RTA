@@ -2,6 +2,8 @@ package com.qa.rta.pages;
 
 import com.qa.rta.Base.BasePage;
 import com.qa.rta.constants.Constants;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,8 +28,14 @@ public class HomePage extends BasePage
         PageFactory.initElements(driver,this);
     }
     public void secondSectionClick()  {
-        WebDriverWait wait=new WebDriverWait(driver,20);
-        wait.until(ExpectedConditions.elementToBeClickable(secondSection)).click();
+        //WebDriverWait wait=new WebDriverWait(driver,20);
+        //wait.until(ExpectedConditions.elementToBeClickable(secondSection)).click();
+
+        WebElement element = driver.findElement(By.xpath("//ul/li/a[@href=\"/wps/portal/rta/ae/driver-and-carowner\"]"));
+
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+
+        executor.executeScript("arguments[0].click()", element);
     }
 
     public String getHomePageTitle()
